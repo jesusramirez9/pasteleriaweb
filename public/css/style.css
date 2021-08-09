@@ -1,0 +1,1927 @@
+    /* .item_favorite1,
+    .item_favorite2,
+    .item_favorite3 {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 30rem;
+    }
+    
+    .item_favorite1 {
+        background-image: url(../../public/img/home/mesadepostres.jpg);
+    }
+    
+    .item_favorite2 {
+        background-image: url(../../public/img/home/mesadepostres.jpg);
+    }
+    
+    .item_favorite3 {
+        background-image: url(../../public/img/home/mesadepostres.jpg);
+    }
+     */
+    
+    .bolder {
+        font-weight: bold;
+    }
+    
+    .nobolder {
+        font-weight: normal;
+    }
+    
+    .blanco {
+        color: #ffffff;
+    }
+    
+    .justificado {
+        text-align: justify;
+    }
+    
+    .np {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .nm {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    
+    .self_center {
+        align-self: center;
+    }
+    /*HEADER*/
+    
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: #FBA966 !important;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(255, 255, 255);
+    }
+    /*FOOTER*/
+    
+    .wws-popup-container {
+        width: auto;
+        position: fixed;
+        right: 12px;
+        bottom: 12px;
+        z-index: 9999999;
+    }
+    
+    .wws-popup-container--position {
+        right: 12px;
+        bottom: 12px;
+    }
+    
+    .wws-gradient {
+        z-index: -1;
+        position: fixed;
+        width: 500px;
+        height: 500px;
+        content: "";
+        pointer-events: none;
+        display: none;
+    }
+    
+    .wws-popup-container * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .wws-gradient--position {
+        bottom: 0;
+        right: 0;
+        background: radial-gradient(ellipse at bottom right, rgba(29, 39, 54, .2) 0, rgba(29, 39, 54, 0) 72%);
+    }
+    
+    .wws-popup {
+        display: none;
+        max-width: 320px;
+        width: 100%;
+        height: 0px;
+        margin-right: 65px;
+    }
+    
+    .wws--text-color {
+        color: #fff;
+    }
+    
+    .wws--bg-color {
+        background-color: #22c15e;
+    }
+    
+    .wws-popup__close-btn {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        float: right;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 28px;
+        cursor: pointer;
+        user-select: none;
+    }
+    
+    .wws-shadow {
+        box-shadow: 0 0 50px rgba(0, 0, 0, .2);
+    }
+    
+    .wws-clearfix {
+        clear: both;
+    }
+    
+    .wws-popup__support-wrapper {
+        margin-top: 8px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .wws-popup__support {
+        display: inline-block;
+        vertical-align: bottom;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .wws-popup__support-about {
+        font-size: 13px;
+        text-align: center;
+        padding: 18px 12px;
+        line-height: 16px;
+        user-select: none;
+    }
+    
+    .wws-popup__support-person-container {
+        background-color: #fff;
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .wws-popup__support-person-wrapper {
+        padding: 1rem 1rem 1rem 4rem;
+        border-radius: 0 0 8px 8px;
+        min-height: 100px;
+        max-height: 237px;
+        /*overflow-y: scroll;*/
+    }
+    
+    .wws-popup__support-person-link {
+        text-decoration: none !important;
+        color: transparent !important;
+        background-color: transparent !important;
+    }
+    
+    .wws-popup__support-person {
+        display: flex;
+        border-bottom: 1px solid #f5f5f5;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    
+    .wws-popup__support-person-img-wrapper {
+        width: 54px;
+        height: 54px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 14px;
+    }
+    
+    .wws-popup__support-person-img {
+        width: auto;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .wws-popup__support-person-available,
+    .wws-popup__support-person-away {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        z-index: 999999;
+        bottom: 3px;
+        right: 3px;
+        border-radius: 50%;
+    }
+    
+    .wws-popup__support-person-available {
+        background-color: #4caf50;
+    }
+    
+    .wws-popup__support-person-info-wrapper {
+        margin-left: 2px;
+    }
+    
+    .wws-popup__support-person-title {
+        color: #777;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .wws-popup__support-person-name {
+        color: #444;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    
+    .wws-popup__support-person-status {
+        font-size: 11px;
+        font-weight: 400;
+        color: #999;
+        margin-top: 4px;
+        line-height: 18px;
+    }
+    
+    .wws-popup__open-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 14px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .wp-open {
+        cursor: pointer;
+        text-align: right;
+    }
+    /*Home*/
+    
+    .favoritas_home {
+        width: 34%;
+        background: #FF5669;
+        height: 5rem;
+    }
+    
+    .cajahom4 {
+        padding-left: 3rem;
+    }
+    
+    .cajahom4-1 {
+        padding-right: 3rem;
+        padding-top: 3rem;
+    }
+    
+    .imghom4-3 {
+        padding-top: 3rem;
+    }
+    
+    .cajagome4-2 {
+        padding-top: 3rem;
+    }
+    
+    .sectionhome4 {
+        padding-top: 5rem;
+    }
+    
+    .sectionhom3 {
+        padding-top: 5rem;
+    }
+    
+    .sectionhome2 {
+        padding-top: 5rem;
+    }
+    
+    .favorite-txt-1 {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    
+    .favorite-txt-1 {
+        text-align: center;
+    }
+    
+    .favorite-txt-1 {
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1pt;
+    }
+    
+    .txthom4 {
+        padding: 5rem 4rem 0rem 4rem;
+    }
+    
+    .txthom4 h1 {
+        font-size: 2.5rem;
+        color: white;
+    }
+    
+    ._header_bk {
+        overflow: hidden;
+    }
+    
+    .txthom4 p {
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .txthom4-2 {
+        padding: 8rem 4rem 0rem 4rem;
+    }
+    
+    .txthom4-2 h1 {
+        font-size: 2.5rem;
+        color: white;
+    }
+    
+    .txthom4-2 p {
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    .carousel-indicators [data-bs-target] {
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 100%;
+        margin-right: 8px !important;
+        margin-left: 8px !important;
+    }
+    
+    .caousel_baner {
+        right: 53%;
+        bottom: 14.25rem;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .caousel_baner p {
+        font-size: 3.5rem;
+        text-align: justify;
+    }
+    
+    .text_home1 {
+        color: #9C313A;
+        font-weight: bold;
+    }
+    
+    .text_home2 {
+        color: #FA586A;
+        font-weight: bold;
+    }
+    
+    .descripcion_home {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .descripcion_home {
+        font-size: 1rem !important;
+        text-align: justify;
+    }
+    
+    .btn_pedido {
+        color: black !important;
+        background-color: white !important;
+        border-color: white !important;
+    }
+    
+    .btn_escribenos {
+        color: white !important;
+        background-color: #FF5669;
+        border-color: #FF5669;
+    }
+    
+    .carousel-caption2_home {
+        position: absolute;
+        right: 14%;
+        bottom: 12.05rem;
+        left: 54%;
+        padding-top: 14.25rem;
+        /* padding-bottom: 1.25rem; */
+        color: black;
+        text-align: center;
+    }
+    
+    .fondo_home4-1 {
+        background-image: url(../img/home/b.jpg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .section2nosotros {
+        overflow: hidden;
+    }
+    
+    .fondo_home4-2 {
+        background-image: url(../img/home/c.jpg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /*Contacto */
+    
+    .carousel-caption-contact {
+        right: 25%;
+        bottom: 8rem;
+        left: 25%;
+    }
+    
+    .btn_enlace_regreso {
+        color: #fff;
+        background-color: #EC5061;
+        border-color: #EC5061;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    .btn_comprar_detalle {
+        color: #fff;
+        background-color: #9C303D;
+        border-color: #9C303D;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    .carousel-caption-contact p {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .nosdescrip {
+        text-align: justify;
+    }
+    
+    .btn_enlace {
+        text-align: end;
+    }
+    
+    .mapa_contacto iframe {
+        width: 100%;
+        height: 44rem;
+    }
+    
+    .btn-primary {}
+    /* SERVICIOS */
+    
+    .space_nav:hover {
+        color: rgb(251 158 90) !important;
+    }
+    
+    .title_descripcion {
+        text-align: justify;
+        font-weight: 500;
+    }
+    
+    .detalle_tipo li {
+        text-align: justify;
+    }
+    
+    .service1 {
+        position: relative;
+    }
+    
+    .serviceimg1 {
+        position: absolute;
+    }
+    
+    .service2 {
+        position: relative;
+    }
+    
+    .serviceimg2 {
+        position: absolute;
+    }
+    
+    .service3 {
+        position: relative;
+    }
+    
+    .serviceimg3 {
+        position: absolute;
+    }
+    
+    .service1,
+    .service2,
+    .service3 {
+        margin-top: 14rem;
+    }
+    
+    .service1 {
+        background: #9C313B;
+        height: 38rem;
+        max-width: 90rem;
+    }
+    
+    .service2 {
+        background: #FF5266;
+        height: 38rem;
+        max-width: 90rem;
+    }
+    
+    .service3 {
+        background: #FFB368ed;
+        height: 38rem;
+        max-width: 90rem;
+    }
+    
+    .btn_enlace_regreso:hover {
+        color: #fff;
+        background-color: #ec5061;
+        border-color: #ec5061;
+    }
+    
+    .btn_comprar_detalle:hover {
+        color: #fff;
+        background-color: #9C303D;
+        border-color: #9C303D;
+    }
+    
+    .serviceimg1,
+    .serviceimg2,
+    .serviceimg3 {
+        right: -20%;
+        margin-top: -10rem;
+    }
+    
+    .section2service {
+        margin-left: 5rem;
+    }
+    
+    .cajas1s,
+    .cajas2s,
+    .cajas3s {
+        width: 50%;
+        padding: 4rem 0rem 0rem 3rem;
+    }
+    
+    .servicep {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 2.2rem;
+    }
+    
+    .servicedescrip {
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+    /*NOSOTROS */
+    
+    .section2nosotros {}
+    
+    .nosotros1 {
+        background: #FFB468;
+        height: 38rem;
+        max-width: 90rem;
+    }
+    
+    .nosotros1 {
+        position: relative;
+    }
+    
+    .nosotros1 {
+        margin-top: 14rem;
+    }
+    
+    .nosotrosimg1 {
+        position: absolute;
+    }
+    
+    .nosotrosimg1 {
+        right: -20%;
+        margin-top: -10rem;
+    }
+    
+    .cajas1n {
+        width: 50%;
+        padding: 4rem 0rem 0rem 3rem;
+    }
+    
+    .nosp {
+        font-weight: bold;
+        color: #A2754D;
+        font-size: 2.2rem;
+    }
+    
+    .nosdescrip {
+        color: #ffffff;
+        font-size: 1.2rem;
+    }
+    
+    .vision {
+        padding: 1rem 6rem 1rem 0rem;
+    }
+    
+    .visionp {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .mision {
+        padding: 1rem 0rem 1rem 6rem;
+    }
+    
+    .misionp {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+    .visiondescrip {
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    .misiondescrip {
+        font-weight: 600;
+        margin: 0;
+    }
+    /* Catalogo */
+    
+    .producto_torta {
+        margin-top: 5rem;
+    }
+    
+    .producto_torta hr {
+        margin: 1rem 2rem 1rem 0rem;
+        color: #6D2A32;
+    }
+    
+    .producto_torta a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .title-producto {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .title-porcion {
+        font-size: 1.5rem;
+        color: #6D2A32;
+    }
+    
+    .producto_torta ul li a {
+        font-size: 1.4rem;
+    }
+    /* catalogo- detalle */
+    
+    .container_detalle {
+        margin-top: 5rem;
+    }
+    
+    .detalle_producto {
+        padding: 1rem 1rem 4rem 1rem;
+    }
+    
+    .detalle_producto img {
+        border-radius: 4%;
+    }
+    
+    .contact_row1 {
+        padding-right: 7rem;
+    }
+    
+    .container_logo_rp_nav {
+        background-color: #9C303D !important;
+    }
+    
+    footer {
+        background-color: #9C303D !important;
+    }
+    
+    .fott_p1 {
+        color: white;
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: bold;
+    }
+    
+    .fott_p2 {
+        color: #FF5469;
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: bold;
+    }
+    
+    .foot_p2-ll {
+        color: white;
+        font-size: 1.3rem;
+        line-height: 1.7;
+        font-weight: bold;
+    }
+    
+    .foot_p2-ll2 {
+        color: #FEBF8C;
+        font-size: 2rem;
+        line-height: 1;
+        font-weight: bold;
+    }
+    
+    .carousel-caption2_home h5 {
+        color: #9C303D;
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    
+    .carousel-caption2_home p {
+        font-weight: bold;
+    }
+    
+    .img-producto {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    }
+    
+    .img-producto::after {
+        content: "";
+        padding-bottom: 120%;
+        display: block;
+    }
+    
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 9999999;
+    }
+    
+    .img-producto:hover {
+        box-shadow: 4px 7px 10px 2px #0000006b;
+        transition: .3s;
+        transform: scale(1.02);
+    }
+    
+    .img_prodct_Detalle:hover {
+        box-shadow: 4px 7px 10px 2px #0000006b;
+        transition: .3s;
+        transform: scale(1.02);
+    }
+    
+    .carousel-control-next-icon {
+        filter: invert(1) !important;
+    }
+    
+    .carousel-control-prev-icon {
+        filter: invert(1) !important;
+    }
+    
+    .carousel-control-prev {
+        left: -42px !important;
+    }
+    
+    .btn_enviar1:hover {
+        color: #fff;
+        background-color: #9c303dcc;
+        border-color: #9c303de0;
+    }
+    
+    @media(min-width:300px) {
+        .banner_catalogo_Detalle {
+            display: none;
+        }
+        .sectionhom3 {
+            display: none;
+        }
+        .section3_rp {
+            margin-top: 2rem;
+        }
+        .tamtop {
+            margin-top: 2rem;
+        }
+        .serviceprp {
+            color: white;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .servicedescriprp {
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            text-align: justify;
+        }
+        .logo_torta {
+            text-align: center;
+        }
+        .service1rp {
+            background: #FFB368;
+            padding: 1rem;
+        }
+        .service2rp {
+            background: #FF5266;
+            padding: 1rem;
+        }
+        .service3rp {
+            background: #9C313B;
+            padding: 1rem;
+        }
+        .logo1-rp {
+            display: block;
+        }
+        .wsp-icon {
+            position: fixed;
+            right: 15px;
+            bottom: 25px;
+            z-index: 999999999;
+        }
+        .wsp-desk {
+            display: none;
+        }
+        .wsp-display {
+            display: block;
+        }
+        .cajahom4 {
+            padding-left: 0rem;
+        }
+        .txthom4 {
+            padding: 1rem 2rem 1rem 2rem;
+            text-align: justify;
+        }
+        .txthom4 h1 {
+            font-size: 1.5rem;
+            color: white;
+        }
+        .txthom4 p {
+            font-size: 1rem;
+            color: white;
+        }
+        .cajahom4-1 {
+            padding-right: 0rem;
+            padding-top: 2rem;
+        }
+        .txthom4-2 {
+            padding: 2rem 2rem 1rem 2rem;
+        }
+        .txthom4-2 h1 {
+            font-size: 1.5rem;
+            color: white;
+        }
+        .txthom4-2 p {
+            font-size: 1rem;
+            color: white;
+            text-align: justify;
+        }
+        .cajagome4-2 {
+            padding-top: 1.5rem;
+        }
+        .imghom4-3 {
+            padding-top: 1.5rem;
+        }
+        .logo1-rp {
+            display: block;
+        }
+        .logo_caja_desk {
+            display: none;
+        }
+        .nav-item-2 {
+            text-align: center;
+        }
+        .favoritas_home {
+            width: 100%;
+            background: #FF5669;
+            height: 1.8rem;
+        }
+        .favorite-txt-1 {
+            font-size: 1.1rem;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1pt;
+        }
+        .sectionhome2 {
+            padding-top: 1.5rem;
+        }
+        .sectionhom3 {
+            padding-top: 1.5rem;
+        }
+        .sectionhome4 {
+            padding-top: 1.5rem;
+        }
+        .nosotros1 {
+            margin-top: 12rem;
+        }
+        .section2nosotros {}
+        .cajas1n {
+            width: 91%;
+            padding: 8rem 0rem 0rem 2rem;
+        }
+        .nosp {
+            font-weight: bold;
+            color: #A2754D;
+            font-size: 1.5rem;
+        }
+        .mision {
+            padding: 0rem 1rem 1rem 1rem;
+        }
+        .section3nosotros {
+            margin-top: 2rem;
+        }
+        .vision {
+            padding: 0rem 1rem 1rem 1rem;
+        }
+        .misionp {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .visionp {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .producto_torta {
+            margin-top: 1rem;
+        }
+        .title-producto {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .title-porcion {
+            font-size: 1.1rem;
+            color: #6D2A32;
+            font-weight: bold;
+            margin: 0;
+        }
+        .banner_home {
+            display: none;
+        }
+        .logo-header {
+            width: 100px;
+        }
+        .contacto_footer {
+            text-align: start;
+        }
+        .logoFooter {
+            width: 100%;
+        }
+        .footer_content {
+            margin: 2rem 0rem 0rem 0rem;
+            padding: 1rem 0rem;
+        }
+        .fott_p1 {
+            font-size: 1.5rem;
+        }
+        .fott_p2 {
+            font-size: 1.5rem;
+        }
+        .banner_nosotros {
+            display: none;
+        }
+        .caja_amarilla_t {
+            background-color: #FFB468;
+        }
+        .caja_amarilla_t {
+            padding: 2rem;
+        }
+        .section2_nosotros_rp {
+            display: block;
+        }
+        .section2nosotros {
+            display: none;
+        }
+        .banner_contacto {
+            display: none;
+        }
+        .banner_txt_contact {
+            display: block;
+        }
+        .banner_txt_contact p {
+            text-align: justify;
+            text-align-last: center;
+            font-weight: bold;
+        }
+        .banner_txt_contact {
+            padding: 2rem 2rem 0rem 2rem;
+        }
+        .contact_row1 {
+            padding-right: 0rem;
+        }
+        .title_contact {
+            text-align: start;
+            color: #9c303d;
+            font-size: 1.2rem;
+        }
+        .btn_enviar1 {
+            background-color: #9c303d;
+            border-color: #9c303d;
+            font-weight: bold;
+        }
+        .container_contact_2 {
+            padding: 0rem 2rem 0rem 2rem;
+        }
+        .nuestros_datos p {
+            color: #9c303d;
+            font-weight: bold;
+            text-align: start;
+            font-size: 1.2rem;
+            margin-top: 1.3rem;
+        }
+        .rojo_bls {
+            font-weight: bold;
+            color: #9c303d;
+        }
+        .mapa_contacto iframe {
+            width: 100%;
+            height: 22rem;
+        }
+        .section2service {
+            display: none;
+        }
+        .banner_service {
+            display: none;
+        }
+        .sechome1 {
+            background: #FFB368;
+        }
+        .sechome2 {
+            background: #FF5266;
+        }
+        .sechome3 {
+            background: #9C313B;
+        }
+        .title_hom3s {
+            color: white;
+            font-weight: bold;
+            font-size: 1.4;
+            text-align: center;
+        }
+        .descr_home3 {
+            color: white;
+            font-weight: bold;
+            text-align: justify;
+        }
+        .sec3_tp_Rp2 {
+            margin-top: 2rem;
+        }
+        .spce_xtxt {
+            padding: 0.5rem 0rem 1rem 0rem;
+        }
+        .section3_rp {
+            display: block;
+        }
+        .container_detalle {
+            margin-top: 1rem;
+        }
+        .badge_categoria {
+            text-align: center;
+        }
+        .title_detalle {
+            text-align: center;
+            color: #9C303D;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+        .btn_comprar_detalle {
+            color: #fff;
+            background-color: #9C303D;
+            border-color: #9C303D;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .btn_enlace_regreso {
+            color: #fff;
+            background-color: #EC5061;
+            border-color: #EC5061;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .imagen_detalle_bd {
+            margin-top: 2rem;
+        }
+        .banner_catalogo {
+            display: none;
+        }
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background-color: #bc0925 !important;
+            font-weight: bold !important;
+            color: white !important;
+        }
+        .nav-pills .nav-link,
+        .nav-pills .show>.nav-link {
+            background-color: #e0919d !important;
+            font-weight: bold !important;
+            color: white !important;
+        }
+        .btn_categoria {
+            margin: 3px 0rem;
+        }
+        .item_categoria_Catalogo {
+            margin-top: 1rem;
+        }
+        .rp_dp_ylw {
+            background: #9c303d;
+            padding: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+        .navbar-light .navbar-toggler-icon {
+            filter: invert(1) !important;
+        }
+        .navbar-light .navbar-toggler {
+            color: rgb(230 215 215 / 55%) !important;
+            border-color: rgb(255 255 255 / 64%) !important;
+            margin: 0 2rem;
+        }
+    }
+    
+    @media(min-width:600px) {
+        .logo1-rp {
+            display: none;
+        }
+        .logo_caja_desk {
+            background: #fefefe;
+            padding: 2rem 5rem 2rem 10rem;
+        }
+    }
+    
+    @media(min-width:768px) {
+        .descripcion_home li {
+            list-style: none;
+            text-decoration: none;
+        }
+        header {
+            position: initial;
+        }
+        .rp_dp_ylw {
+            display: none;
+        }
+        .item_categoria_Catalogo {
+            margin-top: 2rem;
+        }
+        .nav-pills .nav-link,
+        .nav-pills .show>.nav-link {
+            font-size: 0.8rem;
+        }
+        .producto_torta {
+            margin-top: 0.2rem;
+        }
+        .title-producto {
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .item_categoria_Catalogo {
+            display: flex;
+        }
+        .banner_catalogo {
+            display: block;
+        }
+        .section3_rp {
+            display: none;
+        }
+        .sectionhom3 {
+            display: block;
+        }
+        .banner_service {
+            display: block;
+        }
+        .banner_txt_contact {
+            display: none;
+        }
+        .banner_contacto {
+            display: block;
+        }
+        .section2_nosotros_rp {
+            display: none;
+        }
+        .section2nosotros {
+            display: block;
+        }
+        .banner_nosotros {
+            display: block;
+        }
+        .fott_p1 {
+            font-size: 2rem;
+        }
+        .fott_p2 {
+            font-size: 2rem;
+        }
+        .logo-header {
+            width: 200px;
+        }
+        .banner_home {
+            display: block;
+        }
+        .nosotros1 {
+            background: #FFB468;
+            height: 25rem;
+            max-width: 39rem;
+        }
+        .nosotrosimg1 img {
+            width: 50%;
+        }
+        .cajas1n {
+            width: 100%;
+            padding: 1rem 1rem 3.3rem 1rem;
+        }
+        .nosdescrip {
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+        .nosotros1 {
+            margin-top: 4rem;
+        }
+        .carousel-caption-contact {
+            right: 15%;
+            bottom: 2.4rem;
+            left: 15%;
+            font-size: 2rem;
+        }
+        .carousel-caption-contact p {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .nosotrosimg1 {
+            right: -15%;
+            margin-top: -2rem;
+        }
+        .section2nosotros {
+            margin-top: 2rem;
+        }
+        .cajahom4 {
+            padding-left: 1.5rem;
+        }
+        .txthom4 {
+            padding: 1rem 1rem 0rem 1rem;
+            text-align: justify;
+        }
+        .txthom4 h1 {
+            font-size: 1.3rem;
+            color: white;
+        }
+        .txthom4 p {
+            font-size: 0.9rem;
+            color: white;
+        }
+        .cajahom4-1 {
+            padding-right: 1.5rem;
+            padding-top: 1.5rem;
+        }
+        .caousel_baner p {
+            font-size: 1.5rem;
+            text-align: start;
+        }
+        .caousel_baner {
+            right: 53%;
+            bottom: 4.25rem;
+            color: #fff;
+            text-align: center;
+        }
+        footer {
+            background-color: #9C303D !important;
+        }
+        .carousel-caption2_home {
+            position: absolute;
+            right: 8%;
+            bottom: 1.05rem;
+            left: 49%;
+            padding-top: 14.25rem;
+            /* padding-bottom: 1.25rem; */
+            color: black;
+            text-align: center;
+        }
+        .favorite-txt-1 {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1pt;
+        }
+        .favoritas_home {
+            width: 34%;
+            background: #FF5669;
+            height: 2.5rem;
+        }
+        .cuerpo_favorita {
+            padding: 2rem;
+            background: #EAEBE6;
+        }
+        .form_contact input {
+            border: none !important;
+        }
+        .form_contact textarea {
+            border: none !important;
+        }
+        .form-control {
+            padding: 4rem 0rem 0rem 0.5rem !important;
+        }
+        .form_nombre {
+            padding: 1rem 0rem 0rem 0.5rem !important;
+        }
+        .form_apellido {
+            padding: 2rem 0rem 0rem 0.5rem !important;
+        }
+        .form_contact input {
+            border-bottom: 1px solid #ced4da !important;
+        }
+        .form_contact textarea {
+            border-bottom: 1px solid #ced4da !important;
+        }
+        .form-control {
+            padding: 2rem 0rem 0rem 0.5rem !important;
+        }
+        .space_cotstr {
+            padding: 0rem 0.5rem;
+        }
+        .logoFooter {
+            width: 75%;
+        }
+        .footer_mejor {
+            align-self: center;
+        }
+        .fott_p1 {
+            font-size: 1.6rem;
+        }
+        .fott_p2 {
+            font-size: 1.6rem;
+        }
+        .foot_p2-ll2 {
+            font-size: 1.6rem;
+        }
+        .telegon_foot {
+            align-self: center;
+        }
+        .container_contact_2 {
+            padding: 2rem 2rem 0rem 2rem;
+        }
+        .cajas1n {
+            background: #FFB468;
+        }
+        .nosdescrip {
+            font-weight: bold;
+        }
+        .tamtop {
+            padding: 0 0.5rem;
+            align-self: center;
+        }
+        .banner_catalogo_Detalle {
+            display: block;
+        }
+    }
+    
+    @media(min-width:1024px) {
+        .item_categoria_Catalogo {
+            margin-top: 3rem;
+        }
+        .nav-pills .nav-link,
+        .nav-pills .show>.nav-link {
+            font-size: 0.9rem;
+        }
+        .serviceprp {
+            font-size: 1.8rem;
+        }
+        .service1rp {
+            padding: 3rem 2rem;
+        }
+        .service2rp {
+            padding: 2rem 2rem;
+        }
+        .service3rp {
+            padding: 6.5rem 2rem;
+        }
+        .producto_torta {
+            margin-top: 0.2rem;
+        }
+        .visionp {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .misionp {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .section3nosotros {
+            margin-top: 3rem;
+        }
+        .sectionhome4 {
+            padding-top: 5rem;
+        }
+        .sectionhome2 {
+            padding-top: 5rem;
+        }
+        .sectionhom3 {
+            padding-top: 5rem;
+        }
+        .sectionhome2 {
+            padding-top: 5rem;
+        }
+        .logo1-rp {
+            display: none;
+        }
+        .logo_caja_desk {
+            display: block;
+        }
+        .imghom4-3 {
+            padding-top: 3rem;
+        }
+        .cajagome4-2 {
+            padding-top: 3rem;
+        }
+        .txthom4-2 p {
+            font-size: 1.5rem;
+            color: white;
+            text-align: justify;
+        }
+        .txthom4-2 h1 {
+            font-size: 2.5rem;
+            color: white;
+        }
+        .txthom4-2 {
+            padding: 8rem 4rem 0rem 4rem;
+        }
+        .cajahom4-1 {
+            padding-right: 3rem;
+            padding-top: 3rem;
+        }
+        .txthom4 p {
+            font-size: 1.5rem;
+            color: white;
+        }
+        .txthom4 h1 {
+            font-size: 2.5rem;
+            color: white;
+        }
+        .caousel_baner p {
+            font-size: 1rem;
+        }
+        .descripcion_home {
+            font-size: 0.9rem;
+        }
+        .caousel_baner {
+            right: 55%;
+            bottom: 0.25rem;
+        }
+        .btn_pedido {
+            padding: 0.6rem 0.8rem;
+            font-weight: 600;
+        }
+        .btn_escribenos {
+            padding: 0.6rem 0.9rem;
+            font-weight: 600;
+        }
+        .text_home1 {
+            line-height: 1;
+        }
+        .logo_caja_desk {
+            background: #ffffff;
+            padding: 0rem 2rem 0rem 2rem;
+        }
+        .descripcion_home {
+            font-size: 1rem !important;
+        }
+        .favorite-txt-1 {
+            font-size: 1.8rem;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 1pt;
+        }
+        .favoritas_home {
+            width: 34%;
+            background: #FF5669;
+            height: 3rem;
+        }
+        .carousel-caption2_home {
+            bottom: 4.05rem;
+        }
+        .cuerpo_favorita {
+            padding: 3rem;
+            background: #EAEBE6;
+        }
+        .carousel-caption2_home h5 {
+            color: #9C303D;
+        }
+        .txthom4 {
+            padding: 1rem 2rem 0rem 2rem;
+        }
+        .txthom4 h1 {
+            font-size: 1.9rem;
+        }
+        .txthom4 p {
+            font-size: 1.1rem;
+            color: white;
+        }
+        .txthom4-2 h1 {
+            font-size: 1.9rem;
+            color: white;
+        }
+        .txthom4-2 p {
+            font-size: 1.1rem;
+            color: white;
+        }
+        .txthom4-2 {
+            padding: 3rem 4rem 0rem 4rem;
+        }
+        .nosotrosimg1 {
+            right: -10%;
+            margin-top: -8rem;
+        }
+        .nosotros1 {
+            margin-top: 8rem;
+        }
+        .cajas1n {
+            width: 100%;
+            padding: 1.5rem 2rem 3rem 2rem;
+        }
+        .nosotrosimg1 img {
+            width: 53%;
+        }
+        .carousel-caption-contact {
+            right: 18%;
+            bottom: 3.5rem;
+            left: 21%;
+        }
+        .section2nosotros {
+            overflow: hidden;
+        }
+        .nosotrosimg1 {
+            right: -17%;
+            margin-top: -5rem;
+        }
+        .nosotros1 {
+            background: #FFB468;
+            height: 20rem;
+            max-width: 48rem;
+        }
+        .mision {
+            padding: 1rem 0rem 1rem 1rem;
+        }
+        .vision {
+            padding: 1rem 1rem 1rem 0rem;
+        }
+        .nosp {
+            font-weight: bold;
+            color: #A2754D;
+            font-size: 1.9rem;
+            margin: 0;
+            line-height: 1;
+        }
+        .nosdescrip {
+            color: #ffffff;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .misionp {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .visionp {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .producto_torta ul li a {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .title-producto {
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: bold;
+        }
+        .title-porcion {
+            font-size: 0.9rem;
+            color: #6D2A32;
+            margin: 0;
+            line-height: 1;
+            font-weight: bold;
+        }
+        .title_detalle {
+            font-size: 2.3rem;
+            color: #6D2A32;
+            font-weight: bold;
+        }
+        .detalle_tipo li {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .btn_enlace_regreso {
+            color: #fff;
+            background-color: #EC5061;
+            border-color: #EC5061;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .btn_comprar_detalle {
+            color: #fff;
+            background-color: #9C303D;
+            border-color: #9C303D;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        .detalle_producto {
+            padding: 1rem 1rem 2rem 1rem;
+        }
+        .cajahom4 {
+            padding-left: 3rem;
+        }
+        .cajahom4-1 {
+            padding-right: 3rem;
+            padding-top: 3rem;
+        }
+        .txthom4 {
+            padding: 1.5rem 4rem 0rem 4rem;
+        }
+        .head_nd {
+            white-space: break-spaces;
+        }
+        .mapa_contacto {
+            padding: 0rem 2rem;
+        }
+        .item_favorita1,
+        .item_favorita2,
+        .item_favorita3,
+        .item_favorita4 {
+            bottom: 1.05rem;
+        }
+    }
+    
+    @media(min-width:1200px) {
+        .caousel_baner {
+            right: 55%;
+            bottom: 4.25rem;
+        }
+        .caousel_baner p {
+            font-size: 1.2rem;
+        }
+        .carousel-caption2_home {
+            bottom: 7.05rem;
+        }
+        .carousel-caption2_home h5 {
+            color: #9C303D;
+            font-size: 2.3rem;
+        }
+        .txthom4 {
+            padding: 2rem 2rem 0rem 2rem;
+        }
+        .txthom4 h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+        .txthom4-2 h1 {
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+        .txthom4-2 p {
+            font-size: 1.2rem;
+            color: white;
+        }
+        .txthom4 p {
+            font-size: 1.2rem;
+            color: white;
+        }
+        .nosotrosimg1 {
+            right: -37%;
+            margin-top: -5rem;
+        }
+        .nosotrosimg1 img {
+            width: 56%;
+        }
+        .nosotros1 {
+            height: 22rem;
+        }
+        .carousel-caption-contact {
+            right: 18%;
+            bottom: 3rem;
+            left: 21%;
+        }
+        .mapa_contacto iframe {
+            width: 100%;
+            height: 26rem;
+        }
+        .footer_mejor {
+            text-align: center;
+        }
+        .img_logofooter {
+            text-align: center;
+        }
+        .telegon_foot {
+            align-self: center;
+        }
+        .logoFooter {
+            width: 50%;
+        }
+        .service1rp {
+            padding: 5rem 2rem;
+        }
+        .service2rp {
+            padding: 5rem 2rem;
+        }
+        .service3rp {
+            padding: 10.6rem 2rem;
+        }
+        .tamtop {
+            margin-top: 3rem;
+        }
+    }
+    
+    @media(min-width:1300px) {
+        .caousel_baner {
+            right: 55%;
+            bottom: 4.25rem;
+        }
+        .descripcion_home {
+            padding-top: 1rem;
+        }
+        .btn_pedido {
+            padding: 0.7rem 1.3rem;
+            font-weight: 600;
+        }
+        .btn_escribenos {
+            padding: 0.7rem 1.3rem;
+            font-weight: 600;
+        }
+        .cajas1n {}
+        .nosotrosimg1 {
+            right: -52%;
+            margin-top: -5rem;
+        }
+        .nosotrosimg1 img {
+            width: 62%;
+        }
+        .carousel-caption-contact {
+            right: 18%;
+            bottom: 5rem;
+            left: 21%;
+        }
+    }
+    
+    @media(min-width:1440px) {
+        .serviceprp {
+            font-size: 2.3rem;
+        }
+        .service1rp {
+            padding: 7rem 4rem;
+        }
+        .service2rp {
+            padding: 6rem 4rem;
+        }
+        .service3rp {
+            padding: 13.3rem 4rem;
+        }
+        .caousel_baner p {
+            font-size: 1.4rem;
+        }
+        .txthom4-2 {
+            padding: 7rem 4rem 0rem 4rem;
+        }
+        .txthom4 {
+            padding: 4rem 2rem 0rem 2rem;
+        }
+        .txthom4 h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .txthom4-2 h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .nosotrosimg1 {
+            right: -53%;
+            margin-top: -5rem;
+        }
+        .nosotrosimg1 img {
+            width: 69%;
+        }
+        .nosotros1 {
+            background: #FFB468;
+            height: 27rem;
+            max-width: 54rem;
+        }
+        .carousel-caption-contact {
+            bottom: 7rem;
+        }
+        .detalle_producto {
+            padding: 1rem 1rem 4rem 1rem;
+        }
+    }
+    
+    @media(min-width:1600px) {
+        .caousel_baner {
+            right: 55%;
+            bottom: 8.25rem;
+        }
+        .btn_pedido {
+            padding: 0.7rem 2rem;
+            font-weight: 600;
+        }
+        .btn_escribenos {
+            padding: 0.7rem 2rem;
+            font-weight: 600;
+        }
+        .txthom4 {
+            padding: 4rem 3rem 0rem 3rem;
+        }
+        .txthom4 h1 {
+            font-size: 2.7rem;
+            font-weight: bold;
+        }
+        .txthom4-2 h1 {
+            font-size: 2.7rem;
+            font-weight: bold;
+        }
+        .nosotrosimg1 img {
+            width: 78%;
+        }
+        .nosotros1 {
+            background: #FFB468;
+            height: 31rem;
+            max-width: 65rem;
+        }
+        .nosotrosimg1 {
+            right: -42%;
+            margin-top: -5rem;
+        }
+        .nosotros1 {
+            margin-top: 10rem;
+        }
+        .nosp {
+            font-weight: bold;
+            color: #A2754D;
+            font-size: 2.8rem;
+            margin: 0;
+            line-height: 1;
+        }
+        .nosdescrip {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+        .misionp {
+            font-size: 3rem;
+        }
+        .visionp {
+            font-size: 3rem;
+        }
+        .carousel-caption-contact p {
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+    }
+    
+    @media(min-width:1700px) {
+        .nosotros1 {
+            background: #FFB468;
+            height: 31rem;
+            max-width: 69rem;
+        }
+        .nosotrosimg1 img {
+            width: 83%;
+        }
+    }
+    
+    @media(min-width:1800px) {
+        .nosotros1 {
+            background: #FFB468;
+            height: 35rem;
+            max-width: 70rem;
+        }
+        .nosotrosimg1 {
+            right: -49%;
+            margin-top: -5rem;
+        }
+        .nosotrosimg1 img {
+            width: 90%;
+        }
+    }
+    
+    @media (min-width: 1900px) {
+        .containe_home4 {
+            max-width: 96rem;
+        }
+        .container_contact_2 {
+            max-width: 105rem;
+        }
+        .contact_row1 {
+            padding-right: 7rem !important;
+        }
+        .container_logo_rp_nav {
+            background-color: #9C303D !important;
+        }
+        .caousel_baner p {
+            font-size: 1.7rem;
+        }
+        .caousel_baner {
+            right: 56%;
+            bottom: 12.25rem;
+        }
+        .descripcion_home {
+            font-size: 1.2rem !important;
+            text-align: justify;
+        }
+        .nosotrosimg1 img {
+            width: 100%;
+        }
+        .nosotros1 {
+            background: #FFB468;
+            height: 39rem;
+            max-width: 82rem;
+        }
+        .nosotrosimg1 {
+            right: -34%;
+            margin-top: -5rem;
+        }
+        .cajas1n {}
+    }
